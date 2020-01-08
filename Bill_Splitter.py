@@ -9,7 +9,8 @@ def Calc_Total_and_Tip(patrons, subbills):
     subbill = subbills[iter]
     percentage = subbill / subtotal
     print(person)
-    print(subbill + (percentage * tax) + (percentage * tip))
+    amount = (subbill + (percentage * tax) + (percentage * tip))
+    print(round(amount, 2)
     print("==============")
     iter += 1
 
