@@ -7,6 +7,9 @@ def date_calculator():
     date = input("> ").split("/")
     if (date[0] == "END"):
       break
+    elif ((current_days[date[0] - 1] < date[1]) or (date[0] > 12) or (date[0] < 1) or (date[1] < 1)):
+      print("Invalid Input")
+      break
     month = int(date[0])
     day = int(date[1])
     num_days = day
